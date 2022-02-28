@@ -14,4 +14,8 @@ export class PersonaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  festejo(persona: Persona){
+    persona.cumplirAnios()
+  }
+
 }

@@ -3,4 +3,7 @@
     <p>Nombre {{persona.nombre}}</p>
     <p>Apellido {{persona.apellido}}</p>
     <p>Edad {{persona.edad}}</p>
+    <input type="text" [(ngModel)]="persona.nombre" maxlength="40">
+    <br>
+    <button class="btn btn-primary mb-3" (click)="festejo(persona)">Cumplir años</button>
 </div>

@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PersonasComponent } from './componentes/personas/personas.component';
 import { PersonaComponent } from './componentes/persona/persona.component';
+import { FormsModule } from '@angular/forms';
+import { AnadirPersonaComponent } from './componentes/anadir-persona/anadir-persona.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PersonasComponent,
-    PersonaComponent
+    PersonaComponent,
+    AnadirPersonaComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
