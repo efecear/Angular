@@ -10,7 +10,6 @@ export class PersonaService {
 
   constructor() { }
 getAllPersonas():Persona[]{
-  let persona1 = new Persona()
   this.personas.push(new Persona("Hernan", "Borre", 28))
   this.personas.push(new Persona("Alejandro", "Fantino", 55))
   this.personas.push(new Persona("Nicky", "Nicole", 22))
@@ -27,8 +26,9 @@ removePersona(ListaDePersona: Persona[], personaToDelete: Persona): Persona[]{
 }
 
 // anadir persona de la lista
-anadirPersona(persona: Persona): void{
+anadirPersona(): void{
   // IMpement LOgic to remove a Persona
+  this.personas.push(new Persona("Hernan", "Borre", 28))
 }
 
 }

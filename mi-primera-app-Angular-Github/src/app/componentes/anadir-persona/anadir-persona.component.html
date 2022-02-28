@@ -1,1 +1,21 @@
-<p>anadir-persona works!</p>
+<div class="card">
+
+    <div ng-app="">
+        <form>
+          ¿Estás listo para añadir una nueva persona?:
+          <input type="checkbox" ng-model="myVar">
+        </form>
+        <div ng-show="myVar">
+            <h5>Agregar Nueva Persona</h5>
+            <form>
+            <p>Nombre: <input type="text" (ngModel)="persona.nombre" maxlength="40"  placeholder="Nombre"></p>
+            <p>Apellido: <input type="text" (ngModel)="persona.apellido" maxlength="40"  placeholder="Apellido"></p>
+            <p>Edad: <input type="number" (ngModel)="persona.edad" maxlength="2"  placeholder="Edad"></p>
+            <button class="btn btn-primary mb-3" (click)="agregandoPersona()"><i class='fa fa-address-card'></i>  Agregar</button>
+            </form>          
+        </div>
+      </div>
+
+
+
+</div>

@@ -19,4 +19,5 @@ export class Persona {
     descumplirAnios(){
         this.edad--
     }
+
 }
