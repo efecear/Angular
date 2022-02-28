@@ -13,8 +13,8 @@ export class PersonasComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    let persona1 = new Persona("Hernan", "Borre", 28)
-    this.personas.push(persona1)
+    let persona1 = new Persona()
+    this.personas.push(new Persona("Hernan", "Borre", 28))
     this.personas.push(new Persona("Alejandro", "Fantino", 55))
     this.personas.push(new Persona("Nicky", "Nicole", 22))
     this.personas.push(new Persona("Federico", "Camarota"))
