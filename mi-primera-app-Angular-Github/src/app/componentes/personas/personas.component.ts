@@ -18,6 +18,7 @@ export class PersonasComponent implements OnInit {
     this.personas.push(new Persona("Alejandro", "Fantino", 55))
     this.personas.push(new Persona("Nicky", "Nicole", 22))
     this.personas.push(new Persona("Federico", "Camarota"))
+    this.personas.push(new Persona("John", "Reed", 32))
   }
 
 }
