@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mi-primera-app-Angular-Github';
+  description = 'Lease una descripción del string presente';
+  titulopersonas = 'Las siguienes personas lograron obtener su curso';
 }
