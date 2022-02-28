@@ -5,5 +5,10 @@
     <p>Edad {{persona.edad}}</p>
     <input type="text" [(ngModel)]="persona.nombre" maxlength="40">
     <br>
-    <button class="btn btn-primary mb-3" (click)="festejo(persona)">Cumplir años</button>
+    <button class="btn btn-primary mb-3" (click)="festejo(persona)"><i class='fa fa-caret-square-o-up'></i> Cumplir años</button>
+    <br>
+    <button class="btn btn-primary mb-2" (click)="desfestejo(persona)"><i class='fa fa-caret-square-o-down'></i> Desumplir años</button>
+    <br>
+    <button class="btn btn-danger mb-3" (click)="borrarPersona(persona)"><i class='fa fa-remove'></i> Eliminar</button>
+    <i class='fa fa-address-card'></i>
 </div>

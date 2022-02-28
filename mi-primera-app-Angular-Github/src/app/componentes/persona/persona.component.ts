@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Persona } from 'src/app/models/persona';
 
 @Component({
@@ -9,6 +9,7 @@ import { Persona } from 'src/app/models/persona';
 export class PersonaComponent implements OnInit {
 
   @Input() persona: Persona = new Persona()
+  @Output() deletePersona:EventEmitter<Persona> = new EventEmitter
   constructor() { }
 
   ngOnInit(): void {
@@ -16,6 +17,14 @@ export class PersonaComponent implements OnInit {
 
   festejo(persona: Persona){
     persona.cumplirAnios()
+  }
+
+  desfestejo(persona: Persona){
+    persona.descumplirAnios()
+  }
+
+  borrarPersona(personaParaBorrar: Persona){
+    this.deletePersona.emit(personaParaBorrar)
   }
 
 }

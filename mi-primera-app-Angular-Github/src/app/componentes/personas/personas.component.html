@@ -1,8 +1,9 @@
 <div class="personas">
     <h3> {{title}}</h3>
+    <p>Puedes anadir personas haciendo <a href="#anadirPersonas">click Aqui</a></p>
 
     <div class="card-container" *ngFor="let persona of personas">
-        <app-persona [persona]="persona"></app-persona>
+        <app-persona [persona]="persona" (deletePersona)="borrarPersonaDeLista($event)"></app-persona>
     </div>
     <br>
 </div>
