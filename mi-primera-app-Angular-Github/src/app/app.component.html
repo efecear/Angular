@@ -7,7 +7,7 @@
   />
   <span>Welcome Modificando a traves de Github</span>
     <div class="spacer">
-<a routerLink="/" routerLinkActive="active">Inicio</a> | <a>test dos</a>
+<a routerLink="/" routerLinkActive="active">Inicio</a> | <a routerLink="profile" routerLinkActive="active" *ngIf="authService.logIn">Perfil</a> | <a routerLink="login" routerLinkActive="active" *ngIf="!authService.logIn">Login</a> | <a class="nav-link" (click)="logout()" href="#" *ngIf="authService.logIn">logout</a>
 
 
 
